@@ -125,6 +125,7 @@ public class UserInterface extends JPanel {
     }
 
     public static void newGame() {
-        BoardGeneration.initiateChess960();
+        BoardGeneration.initiateStandardChess();
+        Moves.possibleMoves("", WP, WN, WB, WR, WQ, WK, BP, BN, BB, BR, BQ, BK);
     }
 }
